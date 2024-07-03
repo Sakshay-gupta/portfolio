@@ -72,6 +72,36 @@ button:focus {
   border-radius: 12px;
 }
 
+/* Specific CSS to override Bootstrap's default carousel controls styling */
+
+/* .carousel .carousel-indicators {  background-color: gray; } */
+.carousel-indicators [data-bs-target] {
+  background-color: black !important;
+}
+
+.carousel-control-next-icon {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: black !important;
+  background-image: url("../src/Assets/chevron.png") !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../src/Assets/left-chevron.png") !important;
+}
+.carousel-control-next {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: black !important;
+}
+
+/* Ensure text is black */
+.carousel-caption {
+  color: black !important; /* Use !important to override any other styles */
+}
+
 /* --------- */
 /* Navbar Section  */
 /* --------- */
